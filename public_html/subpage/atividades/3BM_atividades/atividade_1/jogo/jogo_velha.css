@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@300&display=swap');
+
+/* Transição da Página */
+.main-content {
+-webkit-animation: fadeIn 3s ease-in-out;
+-moz-animation: fadeIn 3s ease-in-out;
+-o-animation: fadeIn 3s ease-in-out;
+animation: fadeIn 3s ease-in-out;
+}
+
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+/* Zerando CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo-tela */
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: linear-gradient(rgba(17,17,17,0.8), rgba(20,20,20,0.5)), url(../cenario/cenario_principal.gif);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0%;
+    background-repeat: no-repeat;
+}
+/* Fim Fundo-tela */
+
+/* Centro do conteúdo principal*/
+main{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Fim Centro do conteúdo principal*/
+
+/* Conteúdo do Jogo*/
+table {width:550px; height:350px; border:1px solid black}
+table tr { background-color:red; font:bold 46px Verdana; color:white}
+table tr td {text-align:center; width:33.33%}
+table tr td:hover {cursor:pointer}
+input[type=button] {width:150px; height:50px; font-size:20px; font-weight:bold; margin-bottom:20px}
+fieldset {font-size:20; font-weight:bold; border:2px solid blue; width: 300px; margin-bottom:25px}
+/* Fim Conteúdo do Jogo*/
+
+/* Marca da Água*/
+.blink {  
+position: absolute;
+right: 2%;
+bottom: 2%;
+animation: blink 1.5s steps(1, end) infinite;
+text-shadow: 3px 4px 3px red;
+font-size: 2.5rem;
+}
+@keyframes blink {  
+0% {    opacity: 1; color: yellow ; }  
+50% {    opacity: 0; color: yellow ;  }  
+100% {    opacity: 1; color: yellow ;  } 
+}
+/* Fim Marca da Água*/
+
+/* Textos do conteúdo principal */
+.primary-text{
+	padding-top: 2%;
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+	color: yellow;
+	text-shadow: 3px 4px 3px red;
+}
+
+.second-text{
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    color: rgba(165,165,165);
+    text-transform: uppercase;
+}
+/* Fim Textos do conteúdo principal */
+
+/* Botão Retornar a Menu Iniciar */
+.btn-menu {  
+position: absolute;
+left: 2%;
+bottom: 2%;
+}
+
+.btn-menu {
+  width: 220px;
+  height: 55px;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: bold;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  letter-spacing: 0.2rem;
+  border-radius: 20px;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: 1.5s;
+}
+.btn-menu:hover {
+  color: rgba(255,255,0);
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+/* Fim Botão Retornar a Menu Iniciar */

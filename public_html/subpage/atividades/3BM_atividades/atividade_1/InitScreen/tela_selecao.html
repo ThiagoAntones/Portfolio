@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon/icon_game.png">
+    <script src="https://kit.fontawesome.com/bf6e98e238.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="tela_selecao.css">
+	<link rel="stylesheet" href="checkbox_selecao.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <main>
+        <div class="main-content">
+            <h1 class="primary-text">JOGO DA VELHA</h1>
+            <h2 class="second-text">↘ Menu Inciar ↙</h2>
+			<h1>↓ Selecione o Número de Jogadores ↓</h1>
+			
+	<form class="form" action="../jogo/jogo_velha.html" method="post">
+			<div class="Prussia">
+			<div>
+				<input type="radio" class="" id="player1" name="drone" value="player1" onClick="PlayersGame()" required>
+				<label class="container" for="player1">1</label>
+			</div>
+			<div>
+				<input type="radio" id="player2" name="drone" value="player2" onClick="PlayersGame()" required>
+				<label class="container" for="player2">2</label>
+			</div>
+			</div>
+			<h1>↓ Número de Partidas e Nome dos Jogadores ↓</h1>
+			<div class="Lenin">
+				<input type="text" class="nomePlayers" name="nomePlayers1" id="nomePlayers1" placeholder="Nome Player 1" disabled>
+				<input type="number" name="qtd_partidas" id="qtd_partidas" placeholder="Número de Partidas">
+				<input type="text" class="nomePlayers" name="nomePlayers2" id="nomePlayers2" placeholder="Nome Player 2" disabled>
+			</div>
+			<h1>↓ Selecione o Cenário ↓</h1>
+			<div class="China">
+				<img id="myImg" src="../cenario/cenario1.gif" alt="Snow" style="width:100%;max-width:200px">
+				<div>
+					<input type="radio" id="cenario1" name="scene" value="cenario1" checked>
+					<label class="container" for="cenario1"></label>
+				</div>
+				<img id="myImg" src="../cenario/cenario2.gif" alt="Snow" style="width:100%;max-width:200px">
+				<div>
+					<input type="radio" id="cenario2" name="scene" value="cenario2">
+					<label class="container" for="cenario2"></label>
+				</div>
+				<img id="myImg" src="../cenario/cenario3.gif" alt="Snow" style="width:100%;max-width:200px">
+				<div>
+					<input type="radio" id="cenario3" name="scene" value="cenario3">
+					<label class="container" for="cenario3"></label>
+				</div>
+			</div>
+			<div class="Russia">
+				<img id="myImg" src="../cenario/cenario4.gif" alt="Snow" style="width:100%;max-width:200px">
+				<div>
+					<input type="radio" id="cenario4" name="scene" value="cenario4">
+					<label class="container" for="cenario4"></label>
+				</div>
+				<img id="myImg" src="../cenario/cenario5.gif" alt="Snow" style="width:100%;max-width:200px">
+				<div>
+					<input type="radio" id="cenario5" name="scene" value="cenario5">
+					<label class="container" for="cenario5"></label>
+				</div>
+				<img id="myImg" src="../cenario/cenario6.gif" alt="Snow" style="width:100%;max-width:200px">
+				<div>
+					<input type="radio" id="cenario6" name="scene" value="cenario6">
+					<label class="container" for="cenario6"></label>
+				</div>
+			</div>
+            <div class="btns">
+                <button class="btn-network" id="button_j"><i class="fa-solid fa-gamepad"></i> Iniciar Jogo</button>
+            </div>
+	</form>
+			<p><span class="blink">Made By Thiago Antones 2ºDS © 2022</span></p>
+			<a href="../index.html"><button class="btn-menu" type="submit" id="btn-menu"><i class="fa-solid fa-arrow-left-long"></i> Tela Principal</button></a>
+        </div>
+    </main>
+	<script src="tela_selecao.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="https://www.eb.mil.br/eb-internet-lf6_2-theme/images/favicon.ico">
+		<title>Exercício 3</title>
+	<script type="text/javascript">
+	function conversor(){
+		var graus = prompt("Graus Fahrenheit: ");
+		graus = parseFloat(graus);
+		var calcular = graus - 32;
+		var fareh2 = calcular / 1.8;
+		var calculado = fareh2.toFixed(2);
+		document.write("Temperatura em Celsius        = ", calculado, "<br>");
+	}
+	</script>
+	       <style type="text/css">
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			width: 70%;
+  			margin: 0 auto;
+		}
+		h1, h2, h3, p#subtitle, p#subtitle2{
+			font-family: 'Sonsie One', cursive;
+			color: #2a2a2a;
+		}
+		h1 {
+			font-size: 4rem;
+			text-align: center;
+			color: #00BFFF;
+			text-shadow: 2px 2px 10px black;
+		}
+		p {
+			font-size: 1.6rem;
+			line-height: 1.5;
+		}
+		#PrincipalCorp , footer {
+			background-color: white;
+			padding: 1%;
+			text-align: center
+		}
+		</style>
+		</head>
+<body background="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAADFBMVEWYmZuCg4WZmpxvcHGW7YJ5AAABTklEQVR4nO3QwQ3DMAwAMavef+cEfUW4FcgReO6w3TM/tnlPDl9Oykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJ/U/Y5txhuw874Aqpr4CHoAAAAABJRU5ErkJggg==">
+		<h1>Conversor de Fahrenheit para Celsius</h1>
+	
+	<div id="PrincipalCorp">
+	<script>
+	conversor();
+	</script>
+	</div>
+	
+</body>
+</html>

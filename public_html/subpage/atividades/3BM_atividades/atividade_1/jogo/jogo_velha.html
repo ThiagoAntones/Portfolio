@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon/icon_game.png">
+    <script src="https://kit.fontawesome.com/bf6e98e238.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="jogo_velha.js"></script>
+    <link rel="stylesheet" href="jogo_velha.css">
+    <title>Jogo da Velha</title>
+</head>
+<body onload="javascript: initGame();">
+    <main>
+        <div class="main-content">
+            <h1 class="primary-text">JOGO DA VELHA</h1>
+            <h2 class="second-text" id="jogadorAtual"></h2>
+			<h2 id="rodadaAtual"></h2>
+			<!--<fieldset>
+				<legend> Jogadores </legend>
+				<label for="Jogador 1"> Jogador 1: </label>
+				<input type="text" id="jogador1"/>
+				<label for="Jogador 1"> Jogador 2: </label>
+				<input type="text" id="jogador2"/>
+				<input type="button" value="Iniciar" style="margin-top:4px; height:25px; width:150px; font-size:14px" onclick="javascript: initGame();"/>
+			</fieldset>
+			<h3 id="jogadorAtual"> </h3>-->
+			<div id="game">
+				<table cellpadding="0" cellspacing="0">
+					<tr border="1"> 
+						<td id="linha0" onclick="javascript: setOnCeil(this, 0);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'red'"> &nbsp; </td>
+						<td id="linha1" onclick="javascript: setOnCeil(this, 1);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'red'"> &nbsp; </td>
+						<td id="linha2" onclick="javascript: setOnCeil(this, 2);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'red'"> &nbsp; </td>
+					</tr>
+					<tr> 
+						<td id="linha3" onclick="javascript: setOnCeil(this, 3);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'red'"> &nbsp; </td>
+						<td id="linha4" onclick="javascript: setOnCeil(this, 4);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'red'"> &nbsp; </td>
+						<td id="linha5" onclick="javascript: setOnCeil(this, 5);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'red'"> &nbsp; </td>
+					</tr>
+					<tr> 
+						<td id="linha6" onclick="javascript: setOnCeil(this, 6);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'red'"> &nbsp; </td>
+						<td id="linha7" onclick="javascript: setOnCeil(this, 7);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'red'"> &nbsp; </td>
+						<td id="linha8" onclick="javascript: setOnCeil(this, 8);" onmouseover="javascript: this.style.backgroundColor = 'blue'" onmouseout="javascript: this.style.backgroundColor = 'red'"> &nbsp; </td>
+					</tr>
+				</table>
+			</div>	
+			<p><span class="blink">Made By Thiago Antones 2ºDS © 2022</span></p>
+			<a href="../InitScreen/tela_selecao.html"><button class="btn-menu" id="btn-menu"><i class="fa-solid fa-arrow-left-long"></i> Menu Iniciar</button></a>
+		</div>
+    </main>
+</body>
+</html>

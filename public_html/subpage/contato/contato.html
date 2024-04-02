@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../icon/icon.png">
+    <script src="https://kit.fontawesome.com/bf6e98e238.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contato.css">
+    <title>Portifólio Thiago Antones</title>
+    <script>
+      function Tel(){
+        var textBox = document.getElementById("fone");
+        var valor = document.getElementById("fone").value;
+        textBox.select();
+        document.execCommand("copy");
+        alert("Telefone/WhatsApp Copiado: " + valor);
+	}
+	function Email(){
+        var textBox = document.getElementById("email");
+        var valor = document.getElementById("email").value;
+        textBox.select();
+        document.execCommand("copy");
+        alert("Email Copiado: " + valor);
+	}
+    </script>
+</head>
+<body>
+    <header>
+        <div class="menu-content">
+            <h1 class="logo">Portfólio Thiago Antones</h1>
+            <nav class="header-menu">
+                <ul class="list-itens">
+                    <li><a href="../../index.html">Home</a></li>
+					<li><a href="../sobre/sobre.html">Sobre</a></li>
+                    <li><a href="../experiencia/experiencia.html">Experiência</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a id="instagram" href="https://www.instagram.com/thiago.antones" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a id="linkedin" href="https://www.linkedin.com/in/thiago-antones" target="_blank">Linkedin <i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <h1 class="primary-text">Telefone, WhatsApp e E-mail para Contato!</h1>
+            <h2 class="second-text">↓ CLIQUE PARA COPIAR ↓</h2>
+            <div class="btns">
+                <button class="bt-fone" onClick="Tel()"><i class="fa-solid fa-phone"></i> <i class="fa-brands fa-whatsapp"></i> Copiar Telefone</button>
+                <input type="text" name="texto" id="fone" value="14 998172742" readonly>
+			</div><br>
+			<div class="btns">
+				<button class="bt-email" onClick="Email()"><i class="fa-solid fa-envelope"></i> Copiar E-mail</button>
+                <input type="text" name="texto" id="email" value="thiagoantones.mariano@gmail.com" readonly>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

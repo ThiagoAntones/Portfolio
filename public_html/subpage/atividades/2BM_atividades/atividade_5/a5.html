@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="https://t.ctcdn.com.br/wu6qZiUfdwmJ6kHWzQldOLUrsJc=/400x400/smart/i489961.jpeg">
+		<title>Receita Federal</title>
+	<script>
+	function dados(){
+	  var nome = document.getElementById('nome').value;
+      var email = document.getElementById('email').value;
+	  if (nome == "" && email == ""){
+	  alert("Error! Insira as informações requeridas!");
+	  }else if (nome == ""){
+	  alert("Error! Insira seu Nome!");
+	  }else if (email == ""){
+	  alert("Error! Insira seu E-mail!");
+	  }else
+      alert("Olá Usuário!\n" + "Seu nome é: " + nome + "\nE seu Email é: " + email);
+	}
+	</script>
+        <style type="text/css">
+	html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden
+	}
+	body {
+	background-color: #FFF;
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+	}
+	header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #071d41;
+	padding: 1em;
+	}
+	form#h111{
+	border: 1px solid whitesmoke;
+	border-radius: 0.3em;
+	padding: 0.3em;
+	}
+	form#h111 input, form#h111 button{
+	font-size: 1.2em;
+	border-radius: 0.2em;
+	border: none;
+	padding: 0.2em;
+	}
+	form#h111 button{
+	cursor: pointer;
+	background: nome;
+	color: whitesmoke;
+	}
+	form#h111 nutton:hover{
+	background-color: whitesmoke;
+	color: #071d41;
+	}
+	h1{
+	color: white;
+	}
+	form#telaF{
+	position: absolute;
+	bottom: 10%;
+	}
+	img#imageForm{
+	width: 100%;
+	height: 70%;
+	position: relative;
+    top: 50%;
+    transform: translateY(-85%);
+	}
+	.tela{
+	width: 420px;
+	height: 420px;
+	background: rgba(0,0,0,.8);
+	box-shadow: 0 5px 5pc rgba(0,0,0.3);
+	color: #fff;
+	top: 0%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+	}
+	#wrapper{
+	min-height: 89%;
+	position: relative;
+	}
+	div.body-content{
+	padding-bottom: 10px;
+	position: absolute;
+	top: 48%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%)
+	}
+	p {
+	color: white;
+	font-family: "Open Sans Condensed", sans-serif;
+	text-align: center;
+	}
+	.form-container {
+	display: flex;
+    justify-content: center;
+	}
+	.form-container form {
+    width: '35%'; // largura do form
+	}
+	footer{
+	background: #071d41;
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	}
+	a:link, a:visited, a:active {
+	text-decoration: underline;
+	color:#32CD32;
+	}
+	a:hover {
+	text-decoration: underline overline;
+	color:#f00;
+	}
+		</style>
+		
+	</head>
+<body>
+<header>
+<div>
+	<h1>Receita Federal</h1>
+</div>
+<form id="h111" action="#" method="post">
+	<input type="text" name="search" id="search" placeholder="Realize sua busca" required>
+	<button type="sumit"><i class="fas fa=search"></i></button>
+</form>
+</header>
+<div id="wrapper">
+  <div class="container body-content">
+	<p>-> Preecha as informações para a coleta ser realizada! </p>
+	<div class="form-container">
+	<div class="tela">
+	<img id="imageForm" src="https://processus.edu.br/concursos/wp-content/uploads/2021/07/tributacao-previdenciaria-13-salario.png">
+	<form id="telaF" OnSubmit="javascript:dados();">
+	Nome:		<input id="nome" type="text" size="07"><br><br>
+	E-mail:		<input id="email" type="email" size="40"><BR><br>
+	<input type="submit" value="Enviar Dados">
+	<input type="reset" value="Limpar">
+	</form>
+	</div>
+	</div>
+  </div>
+  <footer>
+    <p>&copy; <a href="">Thiago Lucas Antones Mariano</a> - Atividade 6 - PAM 1 - 2°DS - ETEC SP</p>
+  </footer>
+</div>
+</body>
+</html>
