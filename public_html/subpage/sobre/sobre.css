@@ -40,6 +40,11 @@ p {
     color: #e2e0e0; /* Cor do texto */
 }
 
+/* Estilo para remover sublinhado em links */
+a {
+    text-decoration: none;
+}
+
 footer {
     background-color: #92D1C0;
     color: #222222;
@@ -136,45 +141,34 @@ main{
 }
 /* Fim Textos do conteúdo principal */
 
-/* Botões */
-.btns{
-    display: inline;
-    justify-content: center;
-    gap: 20px;
+.main-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.btns button{
-    width: 250px;
-    height: 60px;
-    cursor: pointer;
-    border: 1px solid white;
-    color: white;
-    text-transform: uppercase;
-    background-color: transparent;
-    font-weight: bold;
-    letter-spacing: 0.2rem;  
-    position: relative;
-    transition: 1.5s;
+/* Estilo para as listas aninhadas */
+.sub-list {
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 0;
 }
 
-.btns button:hover{
-    color: rgba(251,255,0);
-    border: none;
+/* Estilo para os itens das listas aninhadas */
+.sub-list li {
+    margin-bottom: 5px;
 }
 
-.btns button:before{
-    content: ' ';
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    width: 0;
-    height: 60px;
-    background-color: rgba(61,61,61);
-    z-index: -1;
-    transition: 1s;
+/* Estilo para os itens de categoria */
+.category {
+    font-size: 222.5%;
+    line-height: 1; /* Espaçamento entre linhas */
+    margin-bottom: 20px; /* Espaçamento entre parágrafos */
+    color: #e2e0e0; /* Cor do texto */
 }
 
-.btns button:hover:before{
-    width: 100%;
+/* Estilo para os itens da lista */
+.sub-list li {
+    font-size: 16px;
+    color: #666;
 }
-/* Fim Botões */
